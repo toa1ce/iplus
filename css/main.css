@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../shrifts/gilroy-regular.ttf');
+}
+
+@font-face {
+    font-family: 'HeadingPro';
+    src: url('../shrifts/HeadingPro-Bold.ttf');
+}
+
+body, input, a {
+    font-family: 'Gilroy';
+    margin: 0;
+    color: white;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: 1090px;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.js-space-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+header {
+    background: linear-gradient(114.23deg, #FEC501 0%, #80C242 67.71%);
+    padding-top: 27px;
+    position: relative;
+    padding-bottom: 143px;
+}
+
+.navbar {
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.menu a {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1;
+    padding: 14.5px 22px;
+}
+
+.menu a:not(:last-child) {
+    border-right: 1px solid #EAB602;
+}
+
+h1, h2 {
+    font-size: 72px;
+    font-family: 'HeadingPro';
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+    margin: 0;
+}
+
+h1 span {
+    color: #443E3E;
+}
+
+.img-students {
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+    z-index: 2;
+}
+
+.svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section, footer {
+    padding: 50px 0;
+    position: relative;
+}
+
+.advantage {
+    background: linear-gradient(114.23deg, #FEC501 0%, #80C242 67.71%);
+}
+
+.advantage h2 {
+    text-align: center;
+    padding-bottom: 53px;
+}
+
+.advantage-card {
+    font-size: 20px;
+    line-height: 1;
+    padding: 25px 30px;
+    background: #FFFFFF;
+    color: black;
+    border: 2px solid #76C22E;
+    box-shadow: -8px 8px 17px rgba(199, 165, 47, 0.5);
+    border-radius: 22px;
+    min-width: 290px;
+    max-width: 327px;
+}
+
+.card-list .advantage-card:first-child {
+    text-align: right;
+}
+
+.card-list .advantage-card:last-child {
+    text-align: left;
+}
+
+.card-list:nth-child(3) {
+    margin: 62px 0 62px 0;
+}
+
+.card-list:nth-child(3) .advantage-card:first-child {
+    transform: translateX(-20%);
+}
+
+.card-list:nth-child(3) .advantage-card:last-child {
+    transform: translateX(20%);
+}
+
+.advantage-img {
+    position: absolute;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-green {
+    background: #80C242;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+}
+
+.sub-title {
+    font-size: 24px;
+    line-height: 1;
+    display: block;
+    margin: 50px 0;
+}
+
+input[type="text"],
+input[type="tel"],
+button {
+    background: #FFFFFF;
+    border: 2px solid #76C22E;
+    box-shadow: -8px 8px 17px rgba(121, 199, 47, 0.5);
+    border-radius: 22px;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: black;
+}
+
+button {
+    background: #FEC501;
+    box-shadow: -8px 8px 17px rgba(121, 199, 47, 0.5), inset 0px -4px 4px rgba(255, 240, 102, 0.25), inset -1px 4px 10px #FFF066;
+    border-radius: 22px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.img-contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-50 a {
+    text-decoration: none;
+}
+
+.sm-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.main-img {
+    margin-right: 82px;
+}
+
+.contact-formBG {
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    .navbar {
+        margin: 0;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 26px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+
+    .img-students {
+        right: 0;
+    }
+
+    section, footer {
+        padding: 30px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    h1, h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .sub-title {
+        font-size: 16px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-formBG {
+        left: 0;
+        top: 100px;
+    }
+
+    .d-flex {
+        display: block;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+
+    .main-img {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .advantage-img {
+        position: relative;
+        width: 100%;
+        transform: scale(1.6);
+        top: 0;
+        left: 0;
+    }
+
+    .img-contact, .img-students {
+        position: relative !important;
+        width: 100%;
+    }
+
+    input {
+        font-size: 16px !important;
+        padding: 15px 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .advantage-card {
+        transform: translate(0) !important;
+        text-align: center !important;
+        padding: 25px 0;
+        margin-bottom: 15px;
+    }
+
+    .card-list {
+        margin: 0 !important;
+    }
+}
+
+
